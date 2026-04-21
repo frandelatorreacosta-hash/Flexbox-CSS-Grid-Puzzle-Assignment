@@ -5,25 +5,32 @@
   text-align: center;
 }
 
+/* Header + Footer */
 header, footer {
   background: #222;
   color: white;
   padding: 10px;
 }
 
+/* PUZZLE GRID */
 .puzzle-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: repeat(2, 100px);
   justify-content: center;
-  width: 420px;
+  gap: 0; /* no spacing so pieces fit like a real puzzle */
+  width: fit-content;
   margin: auto;
 }
 
+/* PUZZLE PIECES */
 .puzzle-container img {
   width: 100px;
   height: 100px;
+  display: block;
 }
 
+/* OPTIONAL HIDDEN CLASS */
 .hidden {
   display: none;
 }
