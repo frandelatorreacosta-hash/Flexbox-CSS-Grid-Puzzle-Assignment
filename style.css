@@ -1,4 +1,3 @@
-/* GRID LAYOUT */
 .grid-container {
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -6,29 +5,25 @@
   text-align: center;
 }
 
-/* HEADER + FOOTER */
 header, footer {
   background: #222;
   color: white;
   padding: 10px;
 }
 
-/* FLEX PUZZLE */
 .puzzle-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 400px;
+  width: 420px;
   margin: auto;
 }
 
-/* PUZZLE PIECES */
 .puzzle-container img {
   width: 100px;
   height: 100px;
 }
 
-/* HIDE WRONG PIECE */
 .hidden {
   display: none;
 }
